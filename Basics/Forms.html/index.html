@@ -7,6 +7,70 @@
     <title>Table</title>
 </head>
 <body>
+    <form action="submit.html" enctype="multipart/form-data">
+        <div>
+            <label for="username">username:</label>
+            <input type="text" id="username" name="username" maxlength="20" required>
+        </div>
+        <div>
+            <label for="email">email:</label>
+            <input type="email" name="mail" id="email">
+        </div>
+        <div>
+            <label for="password">password:</label>
+            <input type="password" name="password" id="password" minlength="8" required>
+        </div>
+        <div>
+            <label for="tel">Phone:</label>
+            <input type="tel" name="phone" id="tel" maxlength="10" minlength="10">
+        </div>
+        <div>
+            <label for="dob">DOB:</label>
+            <input type="date" id="dob" required>
+        </div>
+        <div>
+            <label for="exp">Experience:</label>
+            <input type="number" name="exp" id="exp" maxlength="40" minlength="1" required>
+        </div>
+        <div>
+            <label for="sms">SMS Alert:</label>
+            <input type="checkbox" name="smsalert" id="sms">
+        </div>
+        <div>
+            <label>Choose Gender:</label>
+            <br>
+            <input type="radio" name="gender" id="gender" value="male">
+            <label for="gender">Male</label>
+        </div>
+        <div>
+            <input type="radio" name="gender" id="gender" value="female">
+            <label for="gender">Female</label>
+        </div>
+        <div>
+            <label for="occupation">Occupation:</label>
+            <select name="occupation" id="occupation">
+                <option value="student">Student</option>
+                <option value="professional">Professional</option>
+                <option value="intern">Intern</option>
+                <option value="self">Self-Employeed</option>
+            </select>
+        </div>
+        <div>
+            <label for="file">Upload:</label>
+            <input type="file" id="file" required>
+        </div>
+        <fieldset width="100">
+            <legend>Topics of Interest</legend>
+            <div>
+                <input type="checkbox" id="java">
+                <label for="java">Java</label>
+                <input type="checkbox" id="js">
+                <label for="js">JavaScript</label>
+            </div>
+        </fieldset>
+        <button type="submit">Submit</button>
+        <button type="reset">Clear</button>
+    </form>
     
 </body>
 </html>
