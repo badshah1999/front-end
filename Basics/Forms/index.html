@@ -4,73 +4,73 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Table</title>
+    <title>Form</title>
+    <link rel="stylesheet" href="form.css" type="text/css">
 </head>
 <body>
-    <form action="submit.html" enctype="multipart/form-data">
-        <div>
-            <label for="username">username:</label>
-            <input type="text" id="username" name="username" maxlength="20" required>
+    <div class="head">
+        <h3>Welcome</h3>
+    </div>
+    <div class="regform">
+        <h4>Registration Form</h4>
+    <form action="submit.html" class="form" enctype="multipart/form-data">
+        <div class="input">
+            <label class="textlabel" for="username">Username</label>
+            <input class="user" type="text" id="username" name="username" maxlength="20" required>
         </div>
-        <div>
-            <label for="email">email:</label>
+        <div class="input">
+            <label class="textlabel" for="email">Email</label>
             <input type="email" name="mail" id="email">
         </div>
-        <div>
-            <label for="password">password:</label>
+        <div class="input">
+            <label class="textlabel" for="password">Password</label>
             <input type="password" name="password" id="password" minlength="8" required>
         </div>
+        <div class="input">
+            <label class="textlabel" for="tel">Phone</label>
+            <input type="tel" name="phone" id="tel" maxlength="10" minlength="10" required>
+        </div>
+        
         <div>
-            <label for="tel">Phone:</label>
-            <input type="tel" name="phone" id="tel" maxlength="10" minlength="10">
+            <label>Choose Gender</label>
+        </div>
+        <div class="radio">
+        <div>
+            <input type="radio" name="gender" id="malegender" value="male" required>
+            <label for="malegender">Male</label>
         </div>
         <div>
-            <label for="dob">DOB:</label>
-            <input type="date" id="dob" required>
+            <input type="radio" name="gender" id="femalegender" value="female" required>
+            <label for="femalegender">Female</label>
         </div>
-        <div>
-            <label for="exp">Experience:</label>
-            <input type="number" name="exp" id="exp" maxlength="40" minlength="1" required>
         </div>
-        <div>
-            <label for="sms">SMS Alert:</label>
-            <input type="checkbox" name="smsalert" id="sms">
-        </div>
-        <div>
-            <label>Choose Gender:</label>
-            <br>
-            <input type="radio" name="gender" id="gender" value="male">
-            <label for="gender">Male</label>
-        </div>
-        <div>
-            <input type="radio" name="gender" id="gender" value="female">
-            <label for="gender">Female</label>
-        </div>
-        <div>
-            <label for="occupation">Occupation:</label>
-            <select name="occupation" id="occupation">
+        <div class="occ"> 
+            <label for="occupation">Occupation</label>
+        <!-- <div class="selectocc"> -->
+            <select class="selectocc" name="occupation" id="occupation">
                 <option value="student">Student</option>
                 <option value="professional">Professional</option>
                 <option value="intern">Intern</option>
                 <option value="self">Self-Employeed</option>
             </select>
+        <!-- </div> -->
         </div>
-        <div>
-            <label for="file">Upload:</label>
-            <input type="file" id="file" required>
-        </div>
-        <fieldset width="100">
+        <fieldset class="field" idth="100">
             <legend>Topics of Interest</legend>
             <div>
                 <input type="checkbox" id="java">
                 <label for="java">Java</label>
                 <input type="checkbox" id="js">
                 <label for="js">JavaScript</label>
+                <input type="checkbox" id="c++">
+                <label for="c++">C++</label>
             </div>
         </fieldset>
+        <div class="btn">
         <button type="submit">Submit</button>
         <button type="reset">Clear</button>
+        </div>
     </form>
-    
+</div>
 </body>
 </html>
