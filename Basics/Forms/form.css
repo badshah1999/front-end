@@ -16,9 +16,12 @@ h4{
     position: fixed;
     top: 0;
     width: 100%;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.6);
 }
 body{
-    background-image: url("https://images.pexels.com/photos/1103970/pexels-photo-1103970.jpeg?cs=srgb&dl=pexels-johannes-plenio-1103970.jpg&fm=jpg");
+    background-image:url("./samplepic.jpg");
+    background-size: cover;
+    /* background-position: top right; */
     margin: 0px;
     padding-top: 20px;
 }
@@ -73,6 +76,11 @@ button{
     border-color: wheat;
     font-family: Courier, monospace;
     font-style:italic;
+}
+button:hover{
+    background-color: #ccc;
+    color: #fff;
+    transform: translateY(-2px);
 }
 .field{
     margin-top: 10px;

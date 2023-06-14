@@ -8,12 +8,13 @@
     <link rel="stylesheet" href="form.css" type="text/css">
 </head>
 <body>
+    <script src="sample.js"></script>
     <div class="head">
         <h3>Welcome</h3>
     </div>
     <div class="regform">
         <h4>Registration Form</h4>
-    <form action="submit.html" class="form" enctype="multipart/form-data">
+    <form  class="form" enctype="multipart/form-data">
         <div class="input">
             <label class="textlabel" for="username">Username</label>
             <input class="user" type="text" id="username" name="username" maxlength="20" required>
@@ -47,7 +48,7 @@
         <div class="occ"> 
             <label for="occupation">Occupation</label>
         <!-- <div class="selectocc"> -->
-            <select class="selectocc" name="occupation" id="occupation">
+            <select class="selectocc" name="occupation" id="occupation" required>
                 <option value="student">Student</option>
                 <option value="professional">Professional</option>
                 <option value="intern">Intern</option>
@@ -67,7 +68,7 @@
             </div>
         </fieldset>
         <div class="btn">
-        <button type="submit">Submit</button>
+        <button type="submit" onclick="isDigit(),passwordFormat()">Submit</button>
         <button type="reset">Clear</button>
         </div>
     </form>

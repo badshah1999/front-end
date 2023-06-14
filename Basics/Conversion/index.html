@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convert</title>
+    <link rel="stylesheet" href="length.css" type="text/css">
+    <script src="length.js"></script>
+</head>
+<body>
+    <div class="root">
+    <form class="form" enctype="multipart/form-data" onsubmit="event.preventDefault()">
+        <div>
+            <h3>Convertion</h3>
+        </div>
+        <div class="input">
+            <input id = "cminput" type="number" placeholder="enter number" min="0" required>
+        </div>
+        <div class="btn">
+            <button type="submit" onclick="convert()">Convert to cm</button>
+        </div>
+        <div id="result"></div>
+    </form>
+    </div>
+</body>
+</html>

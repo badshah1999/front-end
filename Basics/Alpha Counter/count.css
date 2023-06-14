@@ -1,0 +1,36 @@
+body{
+    background-color: rgb(203, 203, 120);
+}
+.root{
+    width: 300px;
+    background-color: rgb(0, 0, 0,0.5);
+    height: auto;
+    color:rgb(204, 163, 87);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+    font-size: x-large;
+    text-align: center;
+    border-radius: 5px;
+    margin: 100px auto 100px;
+    padding: 10px 20px 30px;
+}
+.input textarea{
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding: 5px 5px 5px;
+    
+}
+.btn{
+    margin-top: 15px;
+}
+button{
+    border-radius: 5px;
+    text-align: center;
+    font-size: 18px;
+}
+#result{
+    margin-top: 10px;
+    font-style: normal;
+    color: white;
+}

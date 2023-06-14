@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+    <link rel="stylesheet" href="count.css" type="text/css">
+    <script src="count.js"></script>
+</head>
+<body>
+    <div class="root">
+    <form class="form" enctype="multipart/form-data" onsubmit="event.preventDefault()">
+        <div>
+            <h3>Words Counter</h3>
+        </div>
+        <div class="input">
+            <textarea id = "wordinput" type="text" placeholder="type words" required></textarea>
+        </div>
+        <div class="btn">
+            <button type="submit" onclick="count('word')">Word Count</button>
+            <button type="submit" onclick="count('char')">Char Count</button>
+        </div>
+        <div id="result"></div>
+    </form>
+    </div>
+</body>
+</html>
