@@ -28,7 +28,7 @@ btn.addEventListener('click',()=>{
         fetch(`https://${host}/latest?amount=${inputval}&from=${val1}&to=${val2}`)
         .then(resp => resp.json())
         .then((data) => {
-            finalResult.value=(Object.values(data.rates)[0])
+            finalResult.value=data.rates[val2]
     });
     }
 })
